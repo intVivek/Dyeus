@@ -1,9 +1,21 @@
 {
-    "parser": "babel-eslint",
+    "parser": "@babel/eslint-parser",
     "parserOptions": {
-        "ecmaVersion": 2020,
-        "sourceType": "module"
+		"ecmaVersion": 2020,
+		"requireConfigFile": false,
+    	"sourceType": "module"
     },
+	"settings": {
+		"import/resolver": {
+			"node": {
+				"extensions": [".js", ".jsx"],
+				"paths": ["./", "./src"]
+			}
+		},
+		"react": {
+			"version": "detect"
+		}
+	},
     "plugins": ["react", "react-hooks", "import"],
     "env": {"browser": true, "node": true, "es6": true},
     "rules": {
@@ -106,7 +118,7 @@
         "no-whitespace-before-property": "error",
         "object-curly-newline": "off",
         "object-curly-spacing": ["error", "always"],
-        "require-jsdoc": "warn",
+        "require-jsdoc": "off",
         "semi": "error",
         "semi-spacing": "error",
         "space-before-blocks": "error",
@@ -164,7 +176,7 @@
         "react/no-is-mounted": "error",
         "react/no-render-return-value": "error",
         "react/no-unknown-property": "error",
-        "react/react-in-jsx-scope": "error",
+        "react/react-in-jsx-scope": "off",
         "react/require-render-return": "error",
         "react/self-closing-comp": "error",
         "react/jsx-boolean-value": ["error", "never"],
@@ -184,16 +196,5 @@
 		
 		"react-hooks/rules-of-hooks": "error",
     	"react-hooks/exhaustive-deps": "warn"
-    },
-	"settings": {
-		"import/resolver": {
-			"node": {
-				"extensions": [".js", ".jsx"],
-				"paths": ["./", "./src"]
-			}
-		},
-		"react": {
-			"version": "detect"
-		}
-	}
+    }
 }
