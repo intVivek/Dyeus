@@ -16,6 +16,7 @@
 		"browserslist",
 		"dyeus",
 		"keyframes",
+		"opentype",
 		"stylelint"
 	]
 }
