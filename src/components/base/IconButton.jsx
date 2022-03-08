@@ -4,7 +4,7 @@ export default function IconButton (props) {
 	const { icon: Icon } = props;
 	return (
 		<div className={styles.iconButton}>
-			<Icon />
+			{Icon && <Icon />}
 		</div>
 	);
 }
