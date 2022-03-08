@@ -35,10 +35,10 @@ export default function About () {
 					</div>
 				</div>
 			</div>
-			<div className={styles.footer}>
-				<p>Consider us your nerdy ally who spends their time perfecting products that work because they want
-					you to feel your best everyday.</p>
-			</div>
+			<p className={styles.footer}>
+				Consider us your nerdy ally who spends their time perfecting products that work because they want
+				you to feel your best everyday.
+			</p>
 		</div>
 	);
 }
