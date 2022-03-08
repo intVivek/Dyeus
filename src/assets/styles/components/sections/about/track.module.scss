@@ -8,8 +8,8 @@
 	background: linear-gradient(180deg, #FFF6FB 0%, #FFF 100%);
 
 	> .hero {
-		height: 35vh;
 		display: flex;
+		flex: 1;
 		flex-direction: column;
 		justify-content: space-between;
 		padding: 0 24px;
@@ -33,6 +33,9 @@
 
 		> .trackNow {
 			width: 100%;
+			justify-self: center;
+			align-self: center;
+			max-width: 400px;
 			background: linear-gradient(288.62deg, #6E8CF6 42.36%, rgb(110 213 246 / 93%) 115.74%);
 			box-shadow: 0 2px 16px rgb(71 222 255 / 33%);
 		}
@@ -41,12 +44,11 @@
 	> .footer {
 		position: relative;
 		display: grid;
+		justify-self: center;
+		align-self: center;
 		grid-template-columns: 1fr 1fr;
 		gap: 10px;
-
-		> span {
-			width: 100%;
-		}
+		margin: 50px 0;
 	}
 }
 
@@ -62,30 +64,22 @@
 				line-height: 3.5vw;
 			}
 
-			> h3 {
-				font-size: 4vw;
-				line-height: 4vw;
-				margin-top: 2vw;
-			}
-
 			> p {
 				font-size: 2vw;
 				line-height: 2.5vw;
 				margin: 2vw 0;
 				text-align: start;
 			}
+		}
+	}
+}
 
-			> div {
-				width: 300px;
-				margin-top: 2vw;
-
-				> span {
-					font-size: 19.86px;
-					line-height: 29.79px;
-					margin: 2vw 0;
-					text-align: start;
-				}
-			}
+@media screen and (min-width: 800px) {
+	.track {
+		> .footer {
+			grid-template-columns: 1fr 1fr 1fr 1fr;
+			gap: 10px;
+			margin: 50px 0;
 		}
 	}
 }
