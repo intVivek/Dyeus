@@ -1,7 +1,7 @@
-import { ReactComponent as Bell } from '../../img/icons/bell.svg';
-import { ReactComponent as Cart } from '../../img/icons/cart.svg';
-import { ReactComponent as Hamburger } from '../../img/icons/hamburger.svg';
-import styles from '../../styles/components/panels/appBar.module.scss';
+import { ReactComponent as Bell } from '../../assets/img/icons/bell.svg';
+import { ReactComponent as Cart } from '../../assets/img/icons/cart.svg';
+import { ReactComponent as Hamburger } from '../../assets/img/icons/hamburger.svg';
+import styles from '../../assets/styles/components/panels/appBar.module.scss';
 import IconButton from '../base/IconButton';
 
 export default function AppBar (props) {
