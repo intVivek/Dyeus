@@ -13,7 +13,7 @@ export default function Track () {
 				<p>All days and all moods are not made equal. But we can only improve what we measure.
 					Track your mood and vitals (including skin and hair health)
 					so you can take better care of yourself every day.</p>
-				<Button className={styles.trackNow} label='Track you mood on the app' />
+				<Button className={styles.trackMood} label='Track you mood on the app' />
 			</div>
 			<div className={styles.footer}>
 				<img src={Woman1} />

@@ -2,6 +2,7 @@ import styles from '../assets/styles/pages/about.module.scss';
 import AppBar from '../components/panels/AppBar';
 import Flaunt from '../components/sections/about/Flaunt';
 import Landing from '../components/sections/about/Landing';
+import Period from '../components/sections/about/Period';
 import Promise from '../components/sections/about/Promise';
 import Track from '../components/sections/about/Track';
 
@@ -13,6 +14,7 @@ export default function About () {
 			<Flaunt />
 			<Promise />
 			<Track />
+			<Period />
 		</div>
 	);
 }
