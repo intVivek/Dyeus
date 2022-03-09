@@ -13,11 +13,12 @@ import Promise from '../components/sections/about/Promise';
 import Track from '../components/sections/about/Track';
 
 export default function About () {
-	const [navActive, setNavActive] = useState(false);
+	const [navActive, setNavActive] = useState(false),
+		toggleNav = () => setNavActive((active) => !active);
 	return (
 		<div className={styles.about}>
-			<AppBar navActive={navActive} toggleNav={() => setNavActive((active) => !active)} />
-			<Navigation navActive={navActive} />
+			<AppBar navActive={navActive} toggleNav={toggleNav} />
+			<Navigation navActive={navActive} toggleNav={toggleNav} />
 			<div className={styles.sections}>
 				<Landing />
 				<Flaunt />
