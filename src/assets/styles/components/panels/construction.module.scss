@@ -11,22 +11,32 @@
 	> h1 {
 		font-family: Reptile, sans-serif;
 		font-weight: 500;
-		font-size: 42px;
+		font-size: 35px;
 		margin: 0;
+		text-align: center;
 	}
 
 	> p {
 		font-family: Poppins, sans-serif;
 		font-weight: 300;
 		font-size: 16px;
+		text-align: center;
 	}
 
 	> .home {
-		padding: 10px 40px;
+		padding: 8px 40px;
 		margin-top: 20px;
 	}
 
 	> div:first-of-type {
 		position: fixed;
+	}
+}
+
+@media screen and (min-width: 400px) {
+	.construction {
+		> h1 {
+			font-size: 42px;
+		}
 	}
 }

@@ -1,9 +1,9 @@
 import styles from '../../assets/styles/components/base/iconButton.module.scss';
 
 export default function IconButton (props) {
-	const { icon: Icon } = props;
+	const { className, icon: Icon } = props;
 	return (
-		<div className={styles.iconButton}>
+		<div className={`${styles.iconButton} ${className ? className : ''}`}>
 			{Icon && <Icon />}
 		</div>
 	);

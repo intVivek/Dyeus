@@ -7,8 +7,10 @@
 	height: 100vh;
 	display: flex;
 	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 	background: white;
-	padding: 0 20px;
+	padding: 0 20px var(--appbarHeight) 20px;
 	z-index: 1000;
 	transform: translateX(-100%);
 	transition: all 0.1s ease-out;
@@ -23,10 +25,13 @@
 
 		> p {
 			color: black;
+			transition: all 0.1s ease-out;
 		}
 
-		> span > svg {
-			fill: black;
+		&:hover {
+			> p {
+				transform: scale(1.1);
+			}
 		}
 	}
 }

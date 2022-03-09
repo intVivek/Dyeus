@@ -14,8 +14,19 @@
 	z-index: 999;
 
 	&.navActive {
+		background: white;
 		border-radius: 0;
 		box-shadow: unset;
+	}
+
+	> .hamburger {
+		> .back {
+			transform: rotate(180deg);
+
+			> svg > g > path {
+				fill: black;
+			}
+		}
 	}
 
 	> .options {
