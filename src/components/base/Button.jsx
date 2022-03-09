@@ -5,9 +5,9 @@ export default function Button (props) {
 
 	return (
 		<div className={`${styles.button} ${className ? className : ''}`}>
-			{IconLeft && <IconLeft />}
+			<span>{IconLeft && <IconLeft />}</span>
 			<p>{label}</p>
-			{IconRight && <IconRight />}
+			<span>{IconRight && <IconRight />}</span>
 		</div>
 	);
 }

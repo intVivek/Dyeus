@@ -1,3 +1,4 @@
+import { ReactComponent as RightArrow } from '../../../assets/img/icons/rightArrow.svg';
 import Product from '../../../assets/img/picture/product.png';
 import styles from '../../../assets/styles/components/sections/about/periodBox.module.scss';
 import Button from '../../base/Button';
@@ -12,7 +13,7 @@ export default function PeriodBox () {
 					Get it delivered to your doorstep in sustainable packaging and track your subscription on our app.</p>
 			</div>
 			<div className={styles.footer}>
-				<Button className={styles.createBox} label='Create your box on the app' />
+				<Button className={styles.createBox} label='Create your box on the app' iconRight={RightArrow} />
 			</div>
 		</div>
 	);
