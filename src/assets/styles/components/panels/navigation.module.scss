@@ -1,0 +1,32 @@
+.navigation {
+	position: fixed;
+	top: var(--appbarHeight);
+	left: 0;
+	width: 100vw;
+	max-width: 500px;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	background: white;
+	padding: 0 20px;
+	z-index: 1000;
+	transform: translateX(-100%);
+	transition: all 0.1s ease-out;
+
+	&.active {
+		transform: translateX(0);
+	}
+
+	> .navButton {
+		background: white;
+		box-shadow: unset;
+
+		> p {
+			color: black;
+		}
+
+		> span > svg {
+			fill: black;
+		}
+	}
+}

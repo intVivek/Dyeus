@@ -10,6 +10,7 @@ export default function Router () {
 			<Routes>
 				<Route exact path='/' >
 					<Route index element={<About />} />
+					<Route path='about' element={<About />} />
 				</Route>
 				<Route exact path='/*' render={() => <Navigate replace to='/' />} />
 			</Routes>

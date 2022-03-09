@@ -1,5 +1,8 @@
+import { useState } from 'react';
+
 import styles from '../assets/styles/pages/about.module.scss';
 import AppBar from '../components/panels/AppBar';
+import Navigation from '../components/panels/Navigation';
 import Consult from '../components/sections/about/Consult';
 import Flaunt from '../components/sections/about/Flaunt';
 import Footer from '../components/sections/about/Footer';
@@ -10,9 +13,11 @@ import Promise from '../components/sections/about/Promise';
 import Track from '../components/sections/about/Track';
 
 export default function About () {
+	const [navActive, setNavActive] = useState(false);
 	return (
 		<div className={styles.about}>
-			<AppBar />
+			<AppBar navActive={navActive} toggleNav={() => setNavActive((active) => !active)} />
+			<Navigation navActive={navActive} />
 			<div className={styles.sections}>
 				<Landing />
 				<Flaunt />
