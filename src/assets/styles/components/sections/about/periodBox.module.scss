@@ -1,0 +1,88 @@
+.periodBox {
+	position: relative;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	padding: calc(var(--appbarHeight) * 1.5) 0 0;
+	background: #F66E6E;
+
+	> .hero {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		z-index: 99;
+		color: white;
+
+		> h1 {
+			font-family: Reptile, serif;
+			font-weight: 500;
+			font-size: 32px;
+			line-height: 33.3px;
+			margin: 0 34px;
+		}
+
+		> img {
+			width: 100%;
+			padding-right: 10px;
+		}
+
+		> p {
+			font-family: Poppins, sans-serif;
+			font-weight: 300;
+			font-size: 14px;
+			line-height: 28.9px;
+			margin: 0 34px;
+		}
+	}
+
+	> .footer {
+		width: 100%;
+		flex: 1;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		> .createBox {
+			width: 80%;
+			background: black;
+			padding: 8px 5px;
+
+			> p {
+				font-size: 14px;
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 600px) {
+	.periodBox {
+		padding: calc(var(--appbarHeight) * 1.5) 10vw 0;
+
+		> .hero {
+			> h1 {
+				font-size: 3.5vw;
+				line-height: 3.5vw;
+				margin: 0;
+			}
+
+			> img {
+				width: 32vw;
+				height: 32vw;
+				padding-right: 10px;
+				margin: -6vw 0;
+			}
+
+			> p {
+				font-size: 1.4vw;
+				line-height: 2.5vw;
+				margin: 2vw 0;
+				text-align: start;
+			}
+
+			> .trackPeriod {
+				align-self: flex-start;
+			}
+		}
+	}
+}
