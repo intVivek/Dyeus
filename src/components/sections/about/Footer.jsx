@@ -1,8 +1,10 @@
 import { ReactComponent as Facebook } from '../../../assets/img/icons/facebook.svg';
+import { ReactComponent as Mail } from '../../../assets/img/icons/mail.svg';
 import { ReactComponent as RightArrow } from '../../../assets/img/icons/rightArrow.svg';
 import { ReactComponent as Twitter } from '../../../assets/img/icons/twitter.svg';
 import styles from '../../../assets/styles/components/sections/about/footer.module.scss';
 import Button from '../../base/Button';
+import IconButton from '../../base/IconButton';
 
 export default function Footer () {
 	return (
@@ -12,8 +14,8 @@ export default function Footer () {
 			</div>
 			<div className={styles.footerPane}>
 				<div className={styles.social} >
-					<Facebook />
-					<Twitter />
+					<IconButton icon={Facebook} />
+					<IconButton icon={Twitter} />
 				</div>
 				<div className={styles.nav} >
 					<Button className={styles.navButton} label='Products' iconRight={RightArrow} />
@@ -25,6 +27,7 @@ export default function Footer () {
 				<p className={styles.subscribe}>Subscribe to our Newsletter</p>
 				<div className={styles.newsLetter} >
 					<input type='text' placeholder='Enter your email...' />
+					<Button className={styles.subButton} label='About Us' iconLeft={Mail} />
 				</div>
 			</div>
 		</div>
